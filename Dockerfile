@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 WORKDIR /opt/coin
 RUN apt update && apt install -y gnupg2 software-properties-common
-RUN add-apt-repository -y ppa:ppatwo/alaya && apt update && apt install -y platon0.13.2
+RUN add-apt-repository -y ppa:ppatwo/alaya && apt update && apt install -y platon0.14.0
 # cleanup
 RUN apt autoremove -y && rm -rf /var/lib/apt/lists/*
 
